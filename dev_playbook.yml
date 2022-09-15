@@ -1,0 +1,12 @@
+- hosts: winrm_local
+  tasks:
+    - name: Install dev softwares
+      win_chocolatey:
+        name:
+        - git
+        - vscode
+        - sourcetree
+        state: present
+    - name: Install notepad++
+      win_chocolatey:
+        name: notepadplusplus

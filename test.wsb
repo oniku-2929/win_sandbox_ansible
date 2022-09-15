@@ -1,0 +1,13 @@
+<!-- https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file -->
+<Configuration>
+  <Networking>Default</Networking>
+  <MappedFolders>
+    <MappedFolder>
+      <!-- Shared Host folder -->
+      <HostFolder>***</HostFolder>
+      <!-- Scripts and settings will be shared in this folder on Windows Sandbox, it must be absolute path like C:\Users\WDAGUtilityAccount\Desktop\setup -->
+      <SandboxFolder>***</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+</Configuration>
