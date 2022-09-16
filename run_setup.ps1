@@ -140,7 +140,10 @@ SetupWinRMForAnsible
 $TargetHost = "127.0.0.1"
 CheckWinRMConnectivity $UserName $Password $TargetHost
 
-$InventoryFile = "C:\\\\Users\\\\${UserName}\\\\Desktop\\\\setup\\\\hosts"
+$InventoryFile = $PSScriptRoot + '\hosts'
+$PlaybookFile = $PSScriptRoot + '\dev_playbook.yml'
+$InventoryFile = $InventoryFile.Replace("\", "\\\\")
+$PlaybookFile = $PlaybookFile.Replace("\", "\\\\")
+
 CreateInventoryFile $UserName $Password $TargetHost $InventoryFile
-$PlaybookFile = "C:\\\\Users\\\\${UserName}\\\\Desktop\\\\setup\\\\dev_playbook.yml"
 RunPlaybook $InventoryFile $PlaybookFile

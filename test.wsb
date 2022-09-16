@@ -2,12 +2,11 @@
 <Configuration>
   <Networking>Default</Networking>
   <MappedFolders>
-    <MappedFolder>
-      <!-- Shared Host folder -->
-      <HostFolder>***</HostFolder>
-      <!-- Scripts and settings will be shared in this folder on Windows Sandbox, it must be absolute path like C:\Users\WDAGUtilityAccount\Desktop\setup -->
-      <SandboxFolder>***</SandboxFolder>
-      <ReadOnly>false</ReadOnly>
-    </MappedFolder>
+    <!-- If you want to share script folder to Windows Sandbox, uncomment the below section and edit your environment path. -->
+    <!-- <MappedFolder> -->
+      <!-- <HostFolder>***</HostFolder> -->
+      <!-- <ReadOnly>false</ReadOnly> -->
+      <!-- <SandboxFolder>***</SandboxFolder> -->
+    <!-- </MappedFolder> -->
   </MappedFolders>
 </Configuration>
