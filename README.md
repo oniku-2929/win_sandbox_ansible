@@ -19,7 +19,7 @@ The script will do the below things
 
 4. execute run_setup.ps1 like the below.
     ```
-    Powershell -ExecutionPolicy RemoteSigned -File "C:\Users\WDAGUtilityAccount\Desktop\setup\run_setup.ps1"
+    Powershell -ExecutionPolicy RemoteSigned -File "C:\Users\WDAGUtilityAccount\Desktop\run_setup.ps1"
     ```  
     input password for WDAGUtilityAccount (Windows Sandbox Account)  
     **The action overwrites WDAGUtilityAccount Password**.
